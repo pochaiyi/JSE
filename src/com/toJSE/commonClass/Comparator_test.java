@@ -6,7 +6,7 @@ import java.util.Comparator;
 /**
  * 使用Comparator接口比较大小，定制排序
  */
-public class Comparator_use {
+public class Comparator_test {
     public static void main(String[] args) {
         Good[] goodList = new Good[6];
         goodList[0] = new Good("phone",3459);

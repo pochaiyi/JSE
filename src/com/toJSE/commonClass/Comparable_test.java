@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 使用Comparable接口比较大小，自然排序
  */
-public class Comparable_use {
+public class Comparable_test {
     public static void main(String[] args) {
         Student[] stuList = new Student[5];
         stuList[0] = new Student("hhh",21);

@@ -524,6 +524,13 @@ CREATE TABLE IF NOT EXISTS major(
 )
 ```
 
+```mysql
+ALTER TABLE info MODIFY id INT auto_increment; #增加自增长
+ALTER TABLE info auto_increment=10000; #设置自增长步长
+```
+
+
+
 ## TCL
 
 * Transaction Control Language 事务控制语言
@@ -532,7 +539,7 @@ CREATE TABLE IF NOT EXISTS major(
 
 * 存储引擎：它决定了数据库中的数据使用了什么技术、规范进行存储，并不是所有引擎都支持事务，5.8目前的默认引擎InnoDB是支持事务的
 
-##### ACID属性
+##### ACID
 
 * 原子性(Atomicity)：指事务是一个整体，不可分，即其中的SQL语句要全部(不)执行
 * 一致性(Consistency)：事务执行前后数据库整体上处于一致状态
